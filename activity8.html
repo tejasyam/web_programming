@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cool Web Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: linear-gradient(to bottom right, #f9f9f9, #e3e3e3);
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background: #333;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .sidebar h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin: 1rem 0;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            background: #575757;
+        }
+        .content {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .content section {
+            margin-bottom: 2rem;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content section h2 {
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #0078d7;
+            padding-bottom: 0.5rem;
+        }
+        .blog article {
+            margin-bottom: 1.5rem;
+        }
+
+        .blog img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        footer {
+            margin-top: 2rem;
+            background: #444;
+            color: #fff;
+            padding: 2rem 1rem;
+            border-radius: 8px;
+        }
+
+        footer form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        footer form input, footer form textarea, footer form button {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        footer form input:focus, footer form textarea:focus {
+            outline: none;
+            border-color: #0078d7;
+            box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+        }
+
+        footer form button {
+            background: #0078d7;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        footer form button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>My Web Page</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#navigation">Navigation</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to my cool web page! This page showcases a modern layout with a focus on creativity and functionality.</p>
+        </section>
+        <section id="navigation">
+            <h2>Navigation</h2>
+            <p>Explore activities from Assignment 1A, 1B, and 1C:</p>
+            <ul>
+                <li><a href="C:\Users\HP\Desktop\web_prog_assignemnt\activity_1_2_3\assignment_1a_q1.html">Activity 1A</a></li>
+                <li><a href="C:\Users\HP\Desktop\web_prog_assignemnt\activity_1_2_3\assignment_1a_q2.html">Activity 1B</a></li>
+                <li><a href="C:\Users\HP\Desktop\web_prog_assignemnt\activity_1_2_3\assignment_1a_q3.html">Activity 1C</a></li>
+            </ul>
+        </section>
+        <section id="blog" class="blog">
+            <h2>Blog</h2>
+            <article>
+                <h3>Photo Gallery</h3>
+                <img src="corvette.jpeg" alt="Cool photo description">
+            </article>
+            <article>
+                <h3>Videos</h3>
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Watch this awesome video!</a></p>
+            </article>
+        </section>
+        <footer id="contact">
+            <h2>Contact Us</h2>
+            <form action="/submit_form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables and Hyperlinks</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .image-cell {
+            text-align: left;
+            width: 200px;
+        }
+        .shaded {
+            background-color: #FFD700;
+        }
+        .affirmation {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tables and Hyperlinks</h1>
+
+    <table>
+        <tr>
+            <td rowspan="2" colspan="2" class="image-cell">
+                <img src="C:\Users\HP\Desktop\car.jpg" alt="Image of choice" width="150">
+            </td>
+            <td class="shaded">r1c3</td>
+            <td rowspan="2">r1c4</td>
+            <td colspan="2" rowspan="2">r1c5</td>
+
+        </tr>
+        <tr>
+            <td rowspan="2" class="shaded"><a href="mailto:example@email.com">Send Email</a></td>
+
+        </tr>
+        <tr>
+            <td colspan="2" class="shaded"><a href="home.html">Go to home</a></td>
+            <td colspan="2">r3c4</td>
+            <td class="shaded">r3c6</td>
+
+        </tr>
+        <tr>
+            <td class="shaded">r4c1</td>
+            <td colspan="2" class="shaded">r4c2</td>
+            <td rowspan="2">r4c4</td>
+            <td colspan="2" class="shaded">r4c5</td>
+
+
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2" class="shaded">r5c1</td>
+            <td rowspan="2" class="shaded">r5c3</td>
+            <td rowspan="2" colspan="2">r5c5</td>
+            <td class="shaded">E</td>
+
+        </tr>
+
+        <tr>
+            <td class="shaded">r6c4</td>
+
+            <td class="shaded">F</td>
+        </tr>
+
+        <tr>
+            <td >1</td>
+            <td >2</td>
+            <td >3</td>
+            <td >4</td>
+            <td >5</td>
+            <td >6</td>
+        </tr>
+    </table>
+
+</body>
+</html>
